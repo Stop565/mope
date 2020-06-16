@@ -284,7 +284,7 @@ while (flag):
         m += 1
         flag = ct != 0
         ct -= 1
-
+        
     else:
         print('Fp = {} < Ft = {}'.format(round(Fp, 3), Ft))
         print('Рівняння регресії адекватно оригіналу ')
