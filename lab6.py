@@ -1,10 +1,11 @@
 import math
 import random
-
+import time
 from prettytable import PrettyTable
 
 import numpy
 from scipy.stats import f, t
+tt = time.perf_counter()
 
 def get_fisher_critical(prob,f3, f4):
     for i in [j*0.001 for j in range(int(10/0.001))]:
@@ -289,3 +290,5 @@ while (flag):
         print('Fp = {} < Ft = {}'.format(round(Fp, 3), Ft))
         print('Рівняння регресії адекватно оригіналу ')
         flag = False
+
+ print("Час виконання програми: {:.3f} c".format(time.perf_counter() - tt))       
